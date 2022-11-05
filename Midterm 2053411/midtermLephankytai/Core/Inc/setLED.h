@@ -1,8 +1,7 @@
 /*
  * setLED.h
  *
- *  Created on: Nov 5, 2022
- *      Author: Chien
+
  */
 
 #ifndef INC_SETLED_H_
