@@ -1,8 +1,6 @@
 /*
  * fsm_automatic.c
- *
- *  Created on: Nov 5, 2022
- *      Author: Chien
+ 
  */
 
 #include"fsm_automatic.h"
