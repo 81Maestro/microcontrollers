@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+#define ZERO 0
+int middleindexx = 8;
+string suffiWithUnit(double number) {
+    string suffix[17] = { "yocto","zepto","atto","femto","pico","nano","micro","milli",
+    "","kilo","mega","giga","tera","peta","exa","zetta","yotta" };
+    double origin_num = number;
+    if(number<0) {
+        number*=-1;
+    }
+    int i = 0;
+    if (number >= ZERO || number<ZERO) {
+        for (i = 0; i < 8; i++) {
+            if (number / 1000 < 1)
+                break;
+            number /= 1000;
+        }
+    }
+    int idx;
+    if(origin_num>ZERO){
+        idx=middleindexx+i;
+    }
+    else{
+        idx=middleindexx-i;
+        number*=-1;
+    }
+    string result = to_string(number) + " " + suffix[idx];
+    return result;
+}
+int main()
+{
+    double number;
+    cout << "suffixwithunit number: ";
+    cin >> number;
+    string conversion = suffiWithUnit(number);
+    cout << conversion;
+    return 0;
+}
