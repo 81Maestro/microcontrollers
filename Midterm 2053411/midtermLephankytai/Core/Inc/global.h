@@ -1,8 +1,7 @@
 /*
  * global.h
  *
- *  Created on: Nov 5, 2022
- *      Author: Chien
+ 
  */
 
 #ifndef INC_GLOBAL_H_
