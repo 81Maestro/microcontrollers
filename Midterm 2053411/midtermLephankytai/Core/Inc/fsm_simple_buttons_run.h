@@ -1,8 +1,6 @@
 /*
  * fsm_simple_buttons_run.h
  *
- *  Created on: Nov 5, 2022
- *      Author: Chien
  */
 
 #ifndef INC_FSM_SIMPLE_BUTTONS_RUN_H_
